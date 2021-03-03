@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Match Raport Generator</h1>
+        <form action="Generate" method="GET">
+            <hr>
+            <p>Team A name:
+                <input type=text size=50 name=teamAName /></p>
+            <p>Team A goals:
+                <input type=text size=50 name=goalsA /></p>                
+            <p>Team A possession:
+                <input type=text size=50 name=possessionA /></p>            
+            <hr>
+            <p>Team B name:
+                <input type=text size=50 name=teamBName /></p>
+            <p>Team B goals:
+                <input type=text size=50 name=goalsB /></p>                
+            <p>Team B possession:
+                <input type=text size=50 name=possessionB /></p>            
+            <hr>
+            <p>Refree name:
+                <input type=text size=50 name=refreeName /></p>              
+            <input type="submit" style="font-size:20px; height:50px; width:200px" value="run Generate" />
+        </form>
+        <hr>
+        <form action="AddPlayerA" method="GET">
+            <p>Player name:
+                <input type=text size=50 name=playerAName /></p>
+            <p>Player shots:
+                <input type=text size=50 name=shotsA /></p>                
+            <p>Player shots on target:
+                <input type=text size=50 name=shotsOnTargetA /></p>                                  
+            <input type="submit" value="Add player to team A" />
+        </form>
+        <hr>
+        <form action="AddPlayerB" method="GET">
+            <p>Player name:
+                <input type=text size=50 name=playerBName /></p>
+            <p>Player shots:
+                <input type=text size=50 name=shotsB /></p>                
+            <p>Player shots on target:
+                <input type=text size=50 name=shotsOnTargetB /></p>                                  
+            <input type="submit" value="Add player to team B" />
+            <hr>           
+        </form>
+        <form action="ClearPlayers" method="GET">
+            <input type="submit" name="clear" value="Clear players">
+        </form>
+        <form action="CheckPlayers" method="GET">
+            <input type="submit" name="check" value="Check players">
+        </form>
+        <form action="ClearData" method="GET">
+            <input type="submit" name="cleardata" value="Clear matches database">
+        </form>
+        <form action="WatchData" method="GET">
+            <input type="submit" name="watchdata" value="Check database">
+        </form>   
+    </body>
+</html>
